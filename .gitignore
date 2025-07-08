@@ -1,3 +1,6 @@
+# PRiSM
+dist/
+
 # Logs
 logs
 *.log
@@ -56,9 +59,3 @@ typings/
 
 # dotenv environment variables file
 .env
-
-# project-specific files
-pixelfix-macos-x64
-pixelfix-linux-x64
-pixelfix-win-x64.exe
-pixelfix-win-x86.exe
