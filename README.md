@@ -13,7 +13,7 @@ Prism is a fork *(or rather an inspiration project)* of the original [`Transpare
 
 
 Think of Prism as a literal prism for your pixels, analyses the colour data from neighbouring pixels, and conveys it further, eliminating the "halo" effect where possible.
-> In most cases PP removes most, if not all, of the black pixels, but in some cases it might fail and "halo" effects might be visible to some extent.
+> In most cases Prism removes most, if not all, of the black pixels, but in some cases it might fail and "halo" effects might be visible to some extent.
 
 ---
 
