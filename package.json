@@ -1,19 +1,15 @@
 {
   "name": "prism",
   "type": "module",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Probably Repairs Inconsistent Semi-transparency",
   "bin": {
     "prism": "./src/cli.js"
   },
   "scripts": {
-    "clean": "rm -rf dist && mkdir dist && rm -rf build && mkdir build",
+    "clean": "rm -rf dist && mkdir dist",
     "build:bundle": "esbuild src/cli.js --bundle --platform=node --format=cjs --outfile=dist/prism.cjs --external:sharp",
-    "build:pkg:mac": "pkg dist/prism.cjs --targets node18-macos --output build/prism-macos",
-    "build:pkg:linux": "pkg dist/prism.cjs --targets node18-linux --output build/prism-linux",
-    "build:pkg:win": "pkg dist/prism.cjs --targets node18-win --output build/prism-win.exe",
-    "build:pkg:all": "npm run build:pkg:mac && npm run build:pkg:linux && npm run build:pkg:win",
-    "build": "npm run clean && npm run build:bundle && npm run build:pkg:all"
+    "build": "npm run clean && npm run build:bundle && echo '\n\n ; NOTE: To run PRISM run \"node ./dist/prism.cjs -h\".\n\n'"
   },
   "dependencies": {
     "commander": "^14.0.0",
