@@ -19,8 +19,20 @@ Think of Prism as a literal prism for your pixels, analyses the colour data from
 
 ## How to build it yourself?
 
+You need to have intalled [NodeJS](https://nodejs.org/en/download) (and any other JS package manager, or use NodeJS's `npm`)
+
 Just run:
+```bash
+npm i
+```
+Then:
 ```bash
 npm run build
 ```
 In the root folder.
+
+
+After building is finished, to get the help dialogue run:
+```bash
+node ./dist/prism.cjs -h
+```
