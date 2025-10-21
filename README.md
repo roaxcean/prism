@@ -25,14 +25,7 @@ Just run:
 ```bash
 npm i
 ```
-Then:
+Then to summon the help menu, run:
 ```bash
-npm run build
-```
-In the root folder.
-
-
-After building is finished, to get the help dialogue run:
-```bash
-node ./dist/prism.cjs -h
+node src/prism.ts -h
 ```

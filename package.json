@@ -1,23 +1,29 @@
 {
   "name": "prism",
   "type": "module",
+  "private": false,
   "version": "1.0.1",
   "description": "Probably Repairs Inconsistent Semi-transparency",
-  "bin": {
-    "prism": "./src/cli.js"
-  },
+  "main": "src/prism.js",
   "scripts": {
-    "clean": "rm -rf dist && mkdir dist",
-    "build:bundle": "esbuild src/cli.js --bundle --platform=node --format=cjs --outfile=dist/prism.cjs --external:sharp",
-    "build": "npm run clean && npm run build:bundle && echo '\n\n ; NOTE: To run PRISM run \"node ./dist/prism.cjs -h\".\n\n'"
+    "lint": "npx eslint ."
   },
   "dependencies": {
     "commander": "^14.0.0",
+    "consola": "^3.4.2",
     "d3-delaunay": "^6.0.4",
     "sharp": "^0.32.6"
   },
   "devDependencies": {
-    "esbuild": "^0.25.6",
-    "pkg": "^5.8.1"
+    "@eslint/js": "^9.36.0",
+    "@types/d3-delaunay": "^6.0.4",
+    "eslint": "^9.36.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2",
+    "typescript-eslint": "^8.44.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/roaxcean/prism.git"
   }
 }
