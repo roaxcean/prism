@@ -3,7 +3,7 @@ import { Command } from "commander";
 import fs from "node:fs/promises";
 import path from "node:path";
 import { consola } from "consola";
-import { fix } from "./engine.ts";
+import { fix } from "./engine.js";
 import type { PathLike } from "fs";
 
 const program = new Command();
